@@ -1,4 +1,10 @@
-<button [ngStyle]="{'background-color': color}" class="btn">{{ text }}</button>
+<button 
+    [ngStyle]="{'background-color': color}" 
+    class="btn"
+    (click)="onClick()"
+    >
+    {{ text }}
+</button>
 
 <!--[] is a directive to use CSS and use the color attribute in 
     buttonComponent's constructor with headerComponent describing 
