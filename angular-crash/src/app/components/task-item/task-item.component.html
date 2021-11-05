@@ -1,4 +1,5 @@
-<div class="task">
+<div [bgClass]="{reminder: task.reminder}" class="task" (dblclick)="onToggle(task)">
+    <!--task.reminder is the reminder key and value- refer to db.json-->
     <h3>{{task.text}} 
         <fa-icon 
             (click)="onDelete(task)" 
